@@ -1,0 +1,219 @@
+@import "./home.css";
+@import "./modal.css";
+
+body {
+  background-color: black;
+  position: relative;
+}
+
+h1 {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+#back {
+  position:   absolute;
+  top:        -35px;
+  left:       5px;
+  text-align: left;
+  font-size: 35px;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+#home {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(3, 100px);
+  background-color: black;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-item {
+  background-color: black;
+  border: 2px solid white;
+  font-size: 90px;
+  text-align: center;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnsGrid {
+  display: grid;
+  grid-template-columns: 100px 70px;
+  background-color: black;
+  padding-top: 0px;
+  justify-content: center;
+  position: static;
+}
+
+.turnsGrid-items {
+  background-color: black;
+  font-size: 25px;
+  text-align: start;
+  font-weight: bolder;
+}
+
+.winnerGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 32px;
+  background-color: black;
+  padding: 10px;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.winnerGrid-item {
+  background-color: black;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.winner {
+ font-size: 40px; 
+ color: red;
+ font-weight: bolder;
+}
+
+.reset {
+  background-color: gray;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 10%;
+  margin-top: 20px;
+}
+
+.points {
+  font-size: 30px;
+}
+
+/* --------------------------------- */
+
+@media only screen and (min-width: 760px){
+
+  body {
+    background-color: black;
+    position: relative;
+  }
+
+  h1 {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 85px;
+    margin-bottom: 30px;
+  }
+
+  #back {
+    position:   absolute;
+    top:        -35px;
+    left:       5px;
+    text-align: left;
+    font-size: 50px;
+  }
+
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+  }
+
+  #home {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      text-align: center;
+      margin-top: 30px;
+      color: white;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template: repeat(3, 170px) / repeat(3, 170px);
+    background-color: black;;
+    justify-content: center;
+  }
+
+  .grid-item {
+    background-color: black;
+    border: 2px solid white;
+    font-size: 110px;
+    text-align: center;
+    font-weight: bolder;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .turnsGrid {
+    display: grid;
+    grid-template-columns: 150px 130px;
+    background-color: black;
+    padding-top: 0px;
+    justify-content: center;
+    position: static;
+  }
+
+  .turnsGrid-items {
+    background-color: black;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .winnerGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px;
+    background-color: black;
+    padding: 3px;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  .winnerGrid-item {
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .points {
+    font-size: 40px;
+  }
+
+  .reset {
+    background-color: gray;
+    font-weight: bolder;
+    font-size: 47px;
+    border-radius: 10%;
+    margin-top: 40px;
+  }
+
+  .winner {
+  font-size: 40px; 
+  padding-top: 20px;
+  color: red;
+  font-weight: bolder;
+  text-transform: uppercase;
+  }
+
+}

@@ -1,0 +1,111 @@
+.markGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
+    padding-top: 40px;
+    justify-content: center;
+  }
+  
+  .markItem {
+    background-color: black;
+    padding: 10px;
+    font-size: 70px;
+    font-weight: bolder;
+  }
+  
+  #footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  .play {
+    margin-top: 100px;
+    font-size: 40px;
+    color: red;
+    background-color: blueviolet;
+    font-weight: bolder;
+  }
+  
+  .instruction {
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 25px;
+  }
+  
+  .inputName {
+    font-size: 25px;
+    width: 70%;
+    font-weight: bolder;
+  }
+  
+  input[type="color"] {
+      -webkit-appearance: none;
+      border: none;
+      width: 50px;
+      height: 30px;
+  }
+
+
+/* ------------------------------------ */
+
+@media only screen and (min-width: 760px){
+
+    .markGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: black;
+        padding-top: 50px;
+        justify-content: center;
+    }
+    
+    h1 {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      text-align: center;
+      margin-top: 30px;
+      color: white;
+      font-size: 85px;
+    }
+    
+    .markItem {
+        background-color: black;
+        padding: 20px;
+        font-size: 130px;
+        font-weight: bolder;
+    }
+    
+    #footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .play {
+        margin-top: 80px;
+        font-size: 60px;
+        color: red;
+        background-color: blueviolet;
+        font-weight: bolder;
+    }
+    
+    .instruction {
+        font-weight: bold;
+        padding-top: 60px;
+        padding-bottom: 15px;
+        font-size: 45px;
+    }
+    
+    .inputName {
+        font-size: 35px;
+        width: 70%;
+        font-weight: bolder;
+    }
+    
+    input[type="color"] {
+        -webkit-appearance: none;
+        border: none;
+        width: 65px;
+        height: 40px;
+    }
+}

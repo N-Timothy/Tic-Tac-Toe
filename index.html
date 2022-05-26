@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/tictactoe.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <a id="back">  &#8678; </a>
+      <h1>Tic-Tac-Toe</h1>
+  
+        <div class="winnerGrid">
+            <div class="winnerGrid-item" style="grid-column-start: 1; grid-column-end: 3; text-align: center;">
+            Winner Count
+            </div>
+            <div class="winnerGrid-item" id="p1">
+                Player 1
+            </div>
+            <div class="winnerGrid-item" id="p2">
+                Player 2
+            </div>
+            <div class="winnerGrid-item points" id="p1Points"> 0 </div>
+            <div class="winnerGrid-item points" id="p2Points"> 0 </div>
+        </div>
+
+        <div class="turnsGrid">
+          <div class="turnsGrid-items">
+              Turns :
+          </div>
+          <div class="turnsGrid-items" id="Turns">
+            Player1
+          </div>
+          </div>
+
+      <div class="grid-container">
+      <div class="grid-item" id="g1"></div>
+      <div class="grid-item" id="g2"></div>
+      <div class="grid-item" id="g3"></div>  
+      <div class="grid-item" id="g4"></div>
+      <div class="grid-item" id="g5"></div>
+      <div class="grid-item" id="g6"></div>  
+      <div class="grid-item" id="g7"></div>
+      <div class="grid-item" id="g8"></div>
+      <div class="grid-item" id="g9"></div>  
+      </div>
+
+      <button id="Reset" class="reset"> Reset </button>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="winner" id="winner"> </div>
+        </div>
+      </div>    
+
+      <script type="module" src="./Javascript/main.js"></script>
+      
+    </div>
+
+    <div id="home"> 
+      <h1>Tic-Tac-Toe</h1>
+
+      <form id="nameForm" onsubmit="return Start()" >
+
+        <div class="instruction">Input first player name :</div>
+        <input class="inputName" type="text" id="p1Name" maxlength="8" required/>
+        <input class="color" type="color" value="#ffff00" id="xColor">
+
+        <div class="instruction">Input second player name :</div>
+        <input class="inputName" type="text" id="p2Name" maxlength="8" required/>
+        <input class="color" type="color" value="#ffffff" id="yColor">
+        
+        <div>
+          <button type="submit" class="play">PLAY</button>
+        </div>
+      </form>  
+
+      <footer>
+        <div class="markGrid">
+          <div class="markItem" id="X" style="color: #ffff00">
+            X
+          </div>
+          <div class="markItem" id="O" style="color: #ffffff">
+            O
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        document.getElementById("app").style = 'display: none';
+        function Start() {
+          
+            document.getElementById("home").style = 'display: none';
+            document.getElementById("app").style = 'display: inherit';
+          
+          return false; }
+       </script>
+    </div>
+  </body>
+</html>
